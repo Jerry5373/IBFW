@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Webbin</title>
+    <link rel="stylesheet" href="signup-app.css">
+</head>
+<body>
+    <div class="main-container">
+        <a href="../app/app.html"> <img src="../../../icons/back icon.svg"></a>
+        <p class="title">Sign up</p>
+        <div class="first-row">
+            <div class="column1">
+                <p> First Name </p>
+                <input id="first-name" type="text" placeholder="Your First Name"> 
+            </div>
+            <div class="column2">
+                <p> Surname </p>
+                <input id="surname" type="text" placeholder="Your Surname"> 
+            </div>
+        </div>
+        <div class="second-row">
+            <p> Email </p>
+            <input id="email" type="email" placeholder="Your Email">
+        </div>
+        <div class="third-row">
+            <p> Password </p>
+            <input id="password" type="password" placeholder="Create password">
+        </div>
+        <div class="fourth-row">
+            <p> Confirm Password </p>
+            <input id="confirm-password" type="password" placeholder="Confirm password">
+            <p style="color:rgb(246, 255, 0)" id="message-el"></p>
+        </div>
+        <div class="fifth-row">
+            <input id="checkbox" type="checkbox" onclick="show()">
+            <p id="show"> Show Password </p>
+        </div>
+        <a href="vendor.html" type="submit" onclick="signup()" class="signup-btn">Sign up</a>
+        <script src="signup-app.js"></script>
+    </div>
+</body>
+</html>
